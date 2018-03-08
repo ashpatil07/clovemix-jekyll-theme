@@ -1,0 +1,6 @@
+<ul>
+  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
+  <li class="{% if page.url contains '/left-sidebar/' %} active {% endif %}"><a href="{{ "/left-sidebar/" | absolute_url }}">Left Sidebar</a></li>
+  <li class="{% if page.url contains '/right-sidebar/' %} active {% endif %}"><a href="{{ "/right-sidebar/" | absolute_url }}">Right Sidebar</a></li>
+  <li class="{% if page.url contains '/no-sidebar/' %} active {% endif %}"><a href="{{ "/no-sidebar/" | absolute_url }}">No Sidebar</a></li>
+</ul>
